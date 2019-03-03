@@ -1,0 +1,15 @@
+<div *ngIf = "maze">
+  <div>
+    <span>{{maze.name}}, {{maze.status}}</span> 
+    <!-- <div *ngFor="let genre of maze.genres">{{genres}}</div> -->
+    <div>{{maze.genres}}</div>
+  </div>
+  <div>
+    <img [src]='maze.image'> <br>
+    <span>{{maze.days}}, {{maze.time}}</span>
+  </div>
+  <div>
+    <span>{{maze.provider}}, {{maze.officialSite}}</span> 
+  </div>
+  <div [innerHTML]="maze.description"></div>
+</div>

@@ -1,0 +1,13 @@
+<form>
+    <mat-form-field>
+      <mat-icon matPrefix>search</mat-icon>
+      <input matInput placeholder="Enter a program name" type="text" aria-label="City or Zip" 
+      [formControl]= "search" />
+      <mat-hint>Program name like 'Girls'</mat-hint>
+  
+      <mat-error *ngIf="search.invalid">
+        Type more than one character to search
+      </mat-error>
+    </mat-form-field>
+  
+  </form>
