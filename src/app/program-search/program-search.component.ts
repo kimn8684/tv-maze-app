@@ -20,7 +20,6 @@ export class ProgramSearchComponent implements OnInit {
     this.search.valueChanges
     .pipe(debounceTime(1000))
     .subscribe((searchValue: string) => {
-      console.log
       if (!this.search.invalid){
         this.searchEvent.emit(searchValue)
       }
